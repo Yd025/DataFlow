@@ -26,8 +26,6 @@ I think that the hardest part of this comes from designing the UI interface and 
 - Creating an intuitive interface
 - Balancing functionality with simplicity
 
-# DealFlow: Real Estate Investment Analyzer
-
 ## Getting Started
 
 ### Prerequisites
