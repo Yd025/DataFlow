@@ -25,3 +25,54 @@ I think that the hardest part of this comes from designing the UI interface and 
 - Making complex financial concepts accessible
 - Creating an intuitive interface
 - Balancing functionality with simplicity
+
+# DealFlow: Real Estate Investment Analyzer
+
+## Getting Started
+
+### Prerequisites
+- Node.js installed on your machine
+- Git installed on your machine
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone [your-repository-url]
+cd DataFlow
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the server:
+```bash
+node server.js
+```
+
+4. Open your web browser and navigate to:
+   http://localhost:3000
+
+## Usage
+
+### Manual Entry
+Enter your property details directly into the form:
+- Purchase Price
+- Down Payment
+- Closing Costs
+- Monthly Rent
+- Monthly Expenses
+- Monthly Mortgage
+
+### CSV Upload
+1. Download the sample CSV template from the `uploads` folder
+2. Modify the values to match your property
+3. Upload the CSV file using the upload button
+
+CSV Format:
+```csv
+price,downPayment,closingCosts,rent,expenses,mortgage
+300000,60000,5000,2500,500,1200
+```
