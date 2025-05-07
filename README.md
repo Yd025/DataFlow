@@ -15,7 +15,7 @@ The inspiration for DealFlow came from the growing need for accessible real esta
 - JavaScript for calculations and interactivity
 
 ## What I Learned
-Since I already have lots of Technical knowledge, I spent most of the time understanding financial calculations for this project, including:
+Since I already know about web-design, I spent most of the time understanding financial calculations for this project, including:
 - Implementing complex IRR calculations
 - Understanding real estate investment metrics
 - Building accurate cash flow projections
