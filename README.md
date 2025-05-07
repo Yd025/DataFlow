@@ -36,7 +36,7 @@ I think that the hardest part of this comes from designing the UI interface and 
 
 1. Clone the repository:
 ```bash
-git clone [your-repository-url]
+git clone https://github.com/Yd025/DataFlow.git
 cd DataFlow
 ```
 
