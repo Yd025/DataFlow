@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Estate Deal Analyzer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Yesteryear&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+        <div class="logo">
+            <h1>DealFlow</h1>
+        </div>
+        <p class="tagline">Where Real Estate Meets Smart Analysis</p>
+    </div>
+    <p class="description">
+        DealFlow is your intelligent real estate investment analyzer. Calculate cash flow, ROI, and IRR instantly by entering property details or uploading your CSV data. Our powerful tool helps you make data-driven investment decisions by analyzing key metrics and providing real-time scenario modeling. Whether you're a seasoned investor or just starting out, DealFlow simplifies complex real estate calculations into clear, actionable insights.
+    </p>
+
+    <div class="upload-section">
+        <h2>Upload CSV</h2>
+        <div class="file-upload">
+            <input type="file" id="csvUpload" accept=".csv" class="file-input">
+            <label for="csvUpload" class="file-label">
+                Choose CSV File
+            </label>
+            <span id="fileName">No file chosen</span>
+        </div>
+    </div>
+
+    <div class="property-details">
+      <h2>Property Details</h2>
+      <form id="propertyForm">
+        <div class="form-group">
+          <label>
+            Purchase Price: $
+            <input type="number" name="price" value="300000" required>
+          </label>
+        </div>
+        <div class="form-group">
+          <label>
+            Down Payment: $
+            <input type="number" name="downPayment" value="60000" required>
+          </label>
+        </div>
+        <div class="form-group">
+          <label>
+            Closing Costs: $
+            <input type="number" name="closingCosts" value="5000" required>
+          </label>
+        </div>
+        <div class="form-group">
+          <label>
+            Monthly Rent: $
+            <input type="number" name="rent" value="2500" required>
+          </label>
+        </div>
+        <div class="form-group">
+          <label>
+            Monthly Expenses: $
+            <input type="number" name="expenses" value="500" required>
+          </label>
+        </div>
+        <div class="form-group">
+          <label>
+            Monthly Mortgage: $
+            <input type="number" name="mortgage" value="1200" required>
+          </label>
+        </div>
+      </form>
+    </div>
+
+    <div class="scenario-modeling">
+      <h2>Scenario Modeling</h2>
+      <div class="sliders">
+        <div class="slider-group">
+          <label>
+            Adjust Rent: $<span id="rentValue">2500</span>
+            <input type="range" id="rentSlider" min="1000" max="5000" step="50" value="2500">
+          </label>
+        </div>
+        <div class="slider-group">
+          <label>
+            Adjust Expenses: $<span id="expensesValue">500</span>
+            <input type="range" id="expensesSlider" min="100" max="2000" step="50" value="500">
+          </label>
+        </div>
+        <div class="slider-group">
+          <label>
+            Adjust Mortgage: $<span id="mortgageValue">1200</span>
+            <input type="range" id="mortgageSlider" min="500" max="3000" step="50" value="1200">
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="results">
+      <h2>Results</h2>
+      <ul id="results">
+        <li><strong>Monthly Cash Flow:</strong> $<span id="cashFlow">800</span></li>
+        <li><strong>Annual ROI:</strong> <span id="roi">16.00</span>%</li>
+        <li><strong>5-Year IRR:</strong> <span id="irr">0.00</span>%</li>
+        <li class="irr-explanation">
+            <small>
+                IRR (Internal Rate of Return) represents the annual rate of return on your investment, 
+                considering the time value of money and all cash flows over a 5-year period.
+            </small>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
